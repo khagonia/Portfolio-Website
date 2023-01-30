@@ -25,6 +25,19 @@ html {
 body {
   position: relative;
 }
+
+.wip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 4rem;
+  z-index: 99999999;
+}
 /*******************/
 /* Nav Bar Header  */
 /*******************/
@@ -131,7 +144,7 @@ body {
   background-image: url('./assets/webportf_bgimage.webp');
   background-size: calc(100vw - 100px);
   background-repeat: no-repeat;
-  height: calc(100vh + 15rem);
+  height: calc(90rem);
   filter: drop-shadow(0 0 8px rgba(0,0,0, 0.3));
 }
 
