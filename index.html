@@ -15,55 +15,90 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="preloader"><img src="./assets/logo.png" alt="K icon"></div>
+    <div class="cursor"></div>
+    <div class="wip">
+      THIS WEBSITE CURRENTLY UNDER CONSTRUCTION. BEST VIEWED ONLY AT
+      1536x746px
+    </div>
+    
     <header class="nav-header">
-      <div class="nav-container">
+      <nav class="nav-container">
         <div class="nav-left">
-          <div class="nav-circle">
-            <div class="circle"></div>
-          </div>
-          <ul class="nav-links">
-            <li class="active"><a href="#">about</a></li>
-            <li><a href="#">profile</a></li>
-            <li><a href="#">experience</a></li>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/kaiser-hagonia/"
+                ><img
+                  src="./assets/webportf_linkedin_mono.webp"
+                  alt="linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:dev.khagnoia@gmail.com"
+                ><img
+                  src="./assets/webportf_gmail_mono.webp"
+                  alt="gmail"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/khagonia"
+                ><img
+                  src="./assets/webportf_github_mono.webp"
+                  alt="github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://facebook.com/kaiser.hagonia"
+                ><img
+                  src="./assets/webportf_facebook_mono.webp"
+                  alt="facebook"
+              /></a>
+            </li>
           </ul>
         </div>
         <div class="nav-right">
-          <img class="nav-logo" src="./assets/logo.png" alt="K icon" />
+          <ul class="nav-links">
+            <li><a data-section="about-me" href="#about-me">about</a></li>
+            <li><a data-section="work" href="#work">experience</a></li>
+            <li><a data-section="projects" href="#projects">projects</a></li>
+            <li><a href="#">blog</a></li>
+          </ul>
+          <a data-section="hero" class="nav-logo-link" href="#hero">
+            <img class="nav-logo" src="./assets/logo.png" alt="K icon" />
+          </a>
         </div>
-      </div>
+      </nav>
     </header>
     <main class="main">
-      <div class="wip">
-        THIS WEBSITE CURRENTLY UNDER CONSTRUCTION. BEST VIEWED ONLY AT
-        1536x746px
-      </div>
 
       <!-- HERO SECTION -->
       <div class="themes">
         <div class="themes-container">
           <div class="theme1">
-            <section class="hero-section">
+            <section id="hero" class="hero-section">
               <div class="hero-content-area">
                 <div class="hero-grid-1">
                   <!-- HEADING -->
                   <div class="hero-heading">
-                    <p>
+                    <p class="hero-heading__text1">
                       hi, my name is
                       <span class="hero-heading__highlight"
                         >Kaiser Hagonia</span
                       >
                     </p>
-                    <p>
+                    <p class="hero-heading__text2">
                       aspiring web
                       <span class="hero-heading__highlight"
                         >developer & designer
                       </span>
                     </p>
-                    <p>looking to build a career in web engineering.</p>
+                    <p class="hero-heading__text3">
+                     looking to build a career in web engineering.
+                    </p>
                   </div>
-                  <div class="hero-cta">
+                  <div class="hero-cta hidden">
                     <div class="caret-down"></div>
-                    <a class="cta-btn" href="#">Discover more</a>
+                    <a class="cta-btn" href="#about-me">Discover more</a>
                   </div>
                 </div>
 
@@ -76,300 +111,147 @@
                     </div>
                     <div class="line"></div>
                     <p class="name">/kaiser.hagonia</p>
-                  </div>
-                </div>
-
-                <div class="hero-grid-3">
-                  <!-- SUB-HEADING + CTA BUTTON -->
-                </div>
-                <div class="hero-grid-4">
-                  <!-- LET'S COLLAB -->
-                  <div class="hero-collab-container">
-                    <div class="hero-card">
-                      <img
-                        class="hero-img"
-                        src="./assets/webportf_heroimg_2.webp"
-                        alt="Profile Image of Kaiser"
-                      />
-                      <div class="hero-profile">
-                        <div class="hero-profile__content">
-                          <p>
-                            <span class="profile-attrib">Name:</span> Kaiser
-                            Hagonia
-                          </p>
-                          <p>
-                            <span class="profile-attrib">Origin:</span>
-                            Philippines
-                          </p>
-                          <br />
-                          <p class="profile-attrib">Professional Skills:</p>
-                          <ul class="profile-skills">
-                            <li>Web Developement and Design</li>
-                            <li>Data Analysis</li>
-                            <li>Technical Support</li>
-                            <li>SEO & Content Development</li>
-                            <li>Google Ads Dynamic Remarketing</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="collab-text">Let's Collab</div>
-                    <ul class="social-icons">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_linkedin_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_gmail_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_github_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_facebook_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </div>
             </section>
-          </div>
-          <div class="theme2">
-            <section class="hero-section">
-              <div class="hero-content-area">
-                <div class="hero-grid-1">
-                  <!-- HEADING -->
-                  <div class="hero-heading">
-                    <p>
-                      hi, my name is
-                      <span class="hero-heading__highlight"
-                        >Kaiser Hagonia</span
-                      >
-                    </p>
-                    <p>
-                      aspiring web
-                      <span class="hero-heading__highlight"
-                        >developer & designer
-                      </span>
-                    </p>
-                    <p>looking to build a career in web engineering.</p>
-                  </div>
-                  <div class="hero-cta">
-                    <div class="caret-down"></div>
-                    <a class="cta-btn" href="#">Discover more</a>
-                  </div>
-                </div>
 
-                <div class="hero-grid-2">
-                  <!-- ACCENT -->
-                  <div class="accent">
-                    <div class="squares">
-                      <div class="square" data-theme="theme1"></div>
-                      <div class="square" data-theme="theme2"></div>
-                    </div>
-                    <div class="line"></div>
-                    <p class="name">/kaiser.hagonia</p>
+            <section id="about-me" class="profile-section">
+              <div class="section-container">
+                <div class="section-title">
+                  <p>About me</p>
+                </div>
+                <div class="profile-content">
+                  <div class="profile-content__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque purus semper eget duis at tellus at. Ut etiam sit amet nisl purus in mollis nunc sed. Donec ultrices tincidunt arcu non sodales neque sodales. Consectetur purus ut faucibus pulvinar elementum integer enim. Varius morbi enim nunc faucibus a pellentesque. Elit duis tristique sollicitudin nibh sit amet. Scelerisque fermentum dui faucibus in. Lectus sit amet est placerat in egestas erat. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Accumsan sit amet nulla facilisi morbi tempus iaculis urna. Ac turpis egestas sed tempus urna et. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Turpis in eu mi bibendum neque egestas congue quisque. Id aliquet lectus proin nibh nisl condimentum id venenatis a.</p>
                   </div>
-                </div>
-
-                <div class="hero-grid-3">
-                  <!-- SUB-HEADING + CTA BUTTON -->
-                </div>
-                <div class="hero-grid-4">
-                  <!-- LET'S COLLAB -->
-                  <div class="hero-collab-container">
-                    <div class="hero-card">
-                      <img
-                        class="hero-img"
-                        src="./assets/webportf_heroimg_2.webp"
-                        alt="Profile Image of Kaiser"
-                      />
-                      <div class="hero-profile">
-                        <div class="hero-profile__content">
-                          <p>
-                            <span class="profile-attrib">Name:</span> Kaiser
-                            Hagonia
-                          </p>
-                          <p>
-                            <span class="profile-attrib">Origin:</span>
-                            Philippines
-                          </p>
-                          <br />
-                          <p class="profile-attrib">Professional Skills:</p>
-                          <ul class="profile-skills">
-                            <li>Web Developement and Design</li>
-                            <li>Data Analysis</li>
-                            <li>Technical Support</li>
-                            <li>SEO & Content Development</li>
-                            <li>Google Ads Dynamic Remarketing</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="collab-text">Let's Collab</div>
-                    <ul class="social-icons">
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_linkedin_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_gmail_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_github_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><img
-                            src="./assets/webportf_facebook_mono.webp"
-                            alt="linkedin"
-                        /></a>
-                      </li>
-                    </ul>
+                  <div class="profile-content__image">
+                    <img src="./assets/webportf_heroimg_2.webp" alt="Picture of Kaiser">
                   </div>
                 </div>
               </div>
+            </section>
+
+            <section id="work" class="work-section">
+              <div class="section-container">
+                <div class="section-title">
+                  <p>Job experience</p>
+                </div>
+                <div class="work-content"> 
+                  <ul class="work-timeline">
+                    <li data-id="GOC" class="work-list-element active" style=>GOC</li>
+                    <li data-id="COG" class="work-list-element">Cognizant</li>
+                    <li data-id="CNX" class="work-list-element">Concentrix</li>
+                  </ul>
+                  <div  class="work-details-area">
+                    <div id="GOC" class="work-details active">
+                      <div class="work-name">Google Operations Center</div>
+                      <div class="work-role">Customer Support Senior Associate</div>
+                      <div class="work-years">February 2020 - April 2022</div>
+                      <div class="work-description">
+                        <ul class="work-description__list">
+                          <li>Dynamic Remarketing implementation and optimization specialist. Supported hundreds of Google's large clients globally.</li>
+                          <li>Process Improvement and Automation Volunteer. Performed value stream mapping which spurred various process improvement projects. </li>
+                          <li>Developed a tool that can detect screenshots that contain internal and sensitive data (not to be shared externally) using deep learning techniques.</li> 
+                          <li>Incident Response and Business Continuity. Part of the team at Google tasked to unify the IR and BC workflows across gTech (Product Support arm). I was tasked to draft the Incident Response processes based on the consultations across different and currently existing IR processes from different teams inside and outside of gTech.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div id="COG" class="work-details">
+                      <div class="work-name">Cognizant Technology Solutions</div>
+                      <div class="work-role">Senior Process Executive</div>
+                      <div class="work-years">January 2019 - February 2020</div>
+                      <div class="work-description">
+                        <ul class="work-description__list">
+                          <li>Dynamic Remarketing implementation and optimization specialist. Supported hundreds of Google's large clients.</li>
+                          <li>Was later absorbed to Google Operations Center as an in-house customer support.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div id="CNX" class="work-details">
+                      <div class="work-name">Concentrix Philippines</div>
+                      <div class="work-role">Technical Advisor (Level 2)</div>
+                      <div class="work-years">April 2018 - November 2019</div>
+                      <div class="work-description">
+                        <ul class="work-description__list">
+                          <li>Technical Advisor for Apple. Supported all iOS and macOS products through technical troubleshooting and service appoinment setting.</li>
+                          <li>Was one of the top agents in terms of Customer Satisfaction with a 90% customer satisfaction rate. </li> 
+                          <li>Within four months of working as a Level 1 Technical Advisor, was promoted and upskilled to Level 2.</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="projects" class="projects-section">
+              <div class="section-container">
+                <div class="section-title">
+                  <p>Web projects</p>
+                </div>
+                <div class="project-content"> 
+                  <div class="project-card" data-format="1">
+                    <div class="project-details">
+                      <div class="project-title">
+                        <p>Web Portolio Website</p>
+                      </div>
+                      <div class="project-stack">
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JS</li>
+                        </ul>
+                      </div>
+                      <div class="project-description">
+                        Portfolio website and online resume. Built with whatever tech I know and am learning right now. This project is on-going and will continually evolve. Also includes my blog.
+                      </div>
+                    </div>
+                    <div class="project-image">
+                      <img src="./assets/project_1_webportf_img.webp" alt="Portfolio Website">
+                    </div>
+                  </div>
+                  <div class="project-card" data-format="2">
+                    <div class="project-image carousel">
+                      <img class="project-image__img active" data-position="1" src="./assets/easybanklp.png" alt="">
+                      <img class="project-image__img" data-position="2" src="./assets/bookmarklp.png" alt="">
+                      <img class="project-image__img" data-position="3" src="./assets/urlshorteninglp.png" alt="">
+                    </div>
+                    <div class="project-details">
+                      <div class="project-title">
+                        <p>Frontend Mentor Challenges</p>
+                      </div>
+                      <div class="project-stack">
+                        <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JS</li>
+                        </ul>
+                      </div>
+                      <div class="project-description">
+                        <p>
+                          Several mini-challenge project solutions from Frontend Mentor. The website hosts several challenges to showcase frontend knowledge. Here are some of my completed solutions:
+                        </p>
+                        <ul class="project2-list">
+                          <li>Easybank Landing Page Challenge</li>
+                          <li>Bookmark Landing Page Challenge</li>
+                          <li>URL Shortenting API Landing Page Challenge</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="cta">
+              aaa
             </section>
           </div>
         </div>
       </div>
-
-      <!-- RECENT WORKS SECTION -->
-      <!-- <section class="recent-section">
-        <div class="bg-overlay"></div>
-        <div class="recent-content">
-          <div class="recent-title">
-            <span>RECENT WORKS</span>
-            <div class="recent-circle one"></div>
-            <div class="recent-circle two"></div>
-            <div class="recent-circle three"></div>
-            <div class="recent-circle four"></div>
-          </div>
-          <div class="recent-projects"> -->
-
-      <!-- Card 1 -->
-      <!-- <div class="project-card">
-              <img src="./assets/astronaut.webp" alt="astronaut with beer" />\
-              <div class="project-details">
-                <p class="project-title">Sample Project #1</p>
-                <p class="project-subtitle">This is a one liner description.</p>
-                <p class="project-stack">Built With</p>
-                <ul class="project-stack-icons">
-                  <li><img src="./assets/html-5.png" alt="" /></li>
-                  <li><img src="./assets/css-3.png" alt="" /></li>
-                  <li><img src="./assets/js.png" alt="" /></li>
-                </ul>
-              </div>
-            </div> -->
-
-      <!-- Card 2 -->
-      <!-- <div class="project-card">
-              <img src="./assets/astronaut.webp" alt="astronaut with beer" />\
-              <div class="project-details">
-                <p class="project-title">Sample Project #2</p>
-                <p class="project-subtitle">This is a one liner description.</p>
-                <p class="project-stack">Built With</p>
-                <ul class="project-stack-icons">
-                  <li><img src="./assets/html-5.png" alt="" /></li>
-                  <li><img src="./assets/css-3.png" alt="" /></li>
-                  <li><img src="./assets/js.png" alt="" /></li>
-                </ul>
-              </div> -->
-
-      <!-- Card 3 -->
-      <!-- </div>
-            <div class="project-card">
-              <img src="./assets/astronaut.webp" alt="astronaut with beer" />\
-              <div class="project-details">
-                <p class="project-title">Sample Project #3</p>
-                <p class="project-subtitle">This is a one liner description.</p>
-                <p class="project-stack">Built With</p>
-                <ul class="project-stack-icons">
-                  <li><img src="./assets/html-5.png" alt="" /></li>
-                  <li><img src="./assets/css-3.png" alt="" /></li>
-                  <li><img src="./assets/js.png" alt="" /></li>
-                </ul>
-              </div>
-            </div> -->
-
-      <!-- Card 4 -->
-      <!-- <div class="project-card">
-              <img src="./assets/astronaut.webp" alt="astronaut with beer" />\
-              <div class="project-details">
-                <p class="project-title">Sample Project #4</p>
-                <p class="project-subtitle">This is a one liner description.</p>
-                <p class="project-stack">Built With</p>
-                <ul class="project-stack-icons">
-                  <li><img src="./assets/html-5.png" alt="" /></li>
-                  <li><img src="./assets/css-3.png" alt="" /></li>
-                  <li><img src="./assets/js.png" alt="" /></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- CTA SECTION -->
-      <!-- <section class="cta-section">
-        <div class="cta__bg-image"></div>
-        <div class="cta-content">
-          <div class="cta-section__1">
-            <p>Fast. Efficient.<br />Awesome.<br />Get the best designer.</p>
-          </div>
-          <div class="cta-image">
-            <img src="./assets/webportf_hero1_mono.webp" alt="" />
-          </div>
-          <div class="cta-section__2">
-            <p class="cta-text">
-              Let's talk about <br />
-              your next project
-            </p>
-            <a class="cta-btn" href="#">Contact me</a>
-          </div>
-        </div>
-        <div class="cta-content">
-          <div class="cta-section__1">
-            <p>Fast. Efficient.<br />Awesome.<br />Get the best designer.</p>
-          </div>
-          <div class="cta-image">
-            <img src="./assets/webportf_hero1_mono.webp" alt="" />
-          </div>
-          <div class="cta-section__2">
-            <p class="cta-text">
-              Let's talk about <br />
-              your next project
-            </p>
-            <a class="cta-btn" href="#">Contact me</a>
-          </div>
-        </div>
-      </section> -->
     </main>
 
     <!-- FOOTER SECTION -->
