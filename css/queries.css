@@ -1,2 +1,234 @@
 /***************************/
-/* 
+/*  Large Desktop >1920px **/
+/***************************/
+@media (min-width: 120em) {
+  .project-image {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+
+/***************************/
+/*  Desktop  <1488px      **/
+/***************************/
+
+@media (max-width: 93em) {
+  .section-container {
+    width: 80%;
+  }
+}
+
+/***************************/
+/*  Laptops  <1300px      **/
+/***************************/
+
+@media (max-width: 81.5em) {
+  .section-container {
+    width: 90%;
+  }
+
+  .section-title h2 {
+    font-size: 4.4;
+  }
+
+  .social-icons.active {
+    transform: translateX(7rem) rotate(90deg) scale(1.20);
+  }
+
+  .hero-heading h1, 
+  .hero-heading h2 {
+    font-size: 4.4rem;
+  }
+
+  .hero-heading span.hero-heading__highlight {
+    font-size: 4rem;
+  }
+
+  .name {
+    font-size: 2.4rem;
+  }
+
+  .cta-btn:link,
+  .cta-btn:visited {
+    font-size: 2.4rem;
+  }
+
+  .profile-content__image img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .blog-content {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+}
+
+/***************************/
+/*  Wide Tablets <1120px  **/
+/***************************/
+
+@media (max-width: 70em) {
+
+  body {
+    font-size: 1.4rem;
+  }
+
+  .profile-section .section-title h2::after {width: 55%;}
+  .work-section .section-title h2::after {width: 40%;}
+  .projects-section .section-title h2::after {width: 45%;}
+  .blog-section .section-title h2::after {width: 70%;}
+
+  .section-container {
+    width: 90%;
+    margin: 20rem 4rem;
+  }
+
+  .section-title h2 {
+    font-size: 3.6rem;
+  }
+
+  .hero-section {
+    min-height: 50rem;
+  }
+
+  .hero-content-area {
+     height: 50rem;
+  }
+  
+  .hero-heading h2, .hero-heading h1 { font-size: 3.6rem;}
+  .hero-heading span.hero-heading__highlight { font-size: 3.3rem;}
+
+  .hero-grid-1 {
+    align-items: center;
+  }
+
+  .work-timeline {
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+  }
+
+  .blog-card {
+    padding-bottom: 3.6rem;
+  }
+
+  .blog-title {
+    font-size: 2.4rem;
+  }
+
+  .blog-more a:link,
+  .blog-more a:visited {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+  }
+
+  .work-details-area {
+    padding-left: 4.8rem;
+  }
+
+  .project-details {
+    max-width: 35rem;
+  }
+
+  .cta-header h2{
+    font-size: 3.6rem;
+  }
+
+  .cta-text {
+    font-size: 1.6rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .cta-button a:link,
+  .cta-button a:visited {
+    font-size: 2rem;
+  }
+}
+
+/***************************/
+/*  Wide Tablets <928px   **/
+/***************************/
+
+@media (max-width: 58em) {
+
+  .hero-heading h2, .hero-heading h1 { font-size: 3rem;}
+  .hero-heading span.hero-heading__highlight { font-size: 2.8rem;}
+
+
+  .profile-section .section-title h2::after {width: 60%;}
+  .work-section .section-title h2::after {width: 55%;}
+  .projects-section .section-title h2::after {width: 55%;}
+  .blog-section .section-title h2::after {width: 75%;}
+
+  .profile-content {
+    display: grid;
+    justify-items: center;
+  }
+  
+  .profile-content__image {
+    grid-row: 1 / 2;
+  }
+
+  .profile-content__text {
+    text-align: center;
+    width: 90%;
+    margin: 0;
+  }
+
+  .profile-content__image img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .work-details-area {
+    width: calc(95% - 150px);
+  }
+
+  .project-content {
+    margin: 0 auto;
+  }
+
+  .project-card[data-format="1"],
+  .project-card[data-format="2"] {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card[data-format="1"] .project-image {
+    grid-row: 1 / 2;
+  }
+
+  .blog-content {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    justify-self: center;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .blog-details {
+    width: 50%;
+    margin: 0 2.4rem
+  }
+
+  .blog-image {
+    width: 50%;
+  }
+
+  .blog-title {
+    padding-top: 0;
+  }
+
+}
+
+/***************************/
+/*  Small Tablets <768px  **/
+/***************************/
+
+@media (max-width: 48em) {
+  .section-container {
+    margin: 20rem 2rem;
+  }
+}

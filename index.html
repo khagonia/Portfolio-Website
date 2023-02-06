@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,15 +18,15 @@
   <body>
     <div class="preloader"><img src="./assets/logo.png" alt="K icon"></div>
     <div class="cursor"></div>
-    <div class="wip">
+    <!-- <div class="wip">
       THIS WEBSITE CURRENTLY UNDER CONSTRUCTION. BEST VIEWED ONLY AT
       1536x746px
-    </div>
-    
+    </div> -->
+
     <header class="nav-header">
       <nav class="nav-container">
         <div class="nav-left">
-          <ul class="social-icons">
+          <ul data-section="contact" class="social-icons">
             <li>
               <a href="https://www.linkedin.com/in/kaiser-hagonia/"
                 ><img
@@ -61,7 +62,7 @@
             <li><a data-section="about-me" href="#about-me">about</a></li>
             <li><a data-section="work" href="#work">experience</a></li>
             <li><a data-section="projects" href="#projects">projects</a></li>
-            <li><a href="#">blog</a></li>
+            <li><a data-section="blog" href="#blog">blog</a></li>
           </ul>
           <a data-section="hero" class="nav-logo-link" href="#hero">
             <img class="nav-logo" src="./assets/logo.png" alt="K icon" />
@@ -80,21 +81,21 @@
                 <div class="hero-grid-1">
                   <!-- HEADING -->
                   <div class="hero-heading">
-                    <p class="hero-heading__text1">
+                    <h1 class="hero-heading__text1">
                       hi, my name is
                       <span class="hero-heading__highlight"
                         >Kaiser Hagonia</span
                       >
-                    </p>
-                    <p class="hero-heading__text2">
+                    </h1>
+                    <h2 class="hero-heading__text2">
                       aspiring web
                       <span class="hero-heading__highlight"
                         >developer & designer
                       </span>
-                    </p>
-                    <p class="hero-heading__text3">
+                    </h2>
+                    <h2 class="hero-heading__text3">
                      looking to build a career in web engineering.
-                    </p>
+                    </h2>
                   </div>
                   <div class="hero-cta hidden">
                     <div class="caret-down"></div>
@@ -119,7 +120,7 @@
             <section id="about-me" class="profile-section">
               <div class="section-container">
                 <div class="section-title">
-                  <p>About me</p>
+                  <h2>About me</h2>
                 </div>
                 <div class="profile-content">
                   <div class="profile-content__text">
@@ -135,7 +136,7 @@
             <section id="work" class="work-section">
               <div class="section-container">
                 <div class="section-title">
-                  <p>Job experience</p>
+                  <h2>Job experience</h2>
                 </div>
                 <div class="work-content"> 
                   <ul class="work-timeline">
@@ -191,7 +192,7 @@
             <section id="projects" class="projects-section">
               <div class="section-container">
                 <div class="section-title">
-                  <p>Web projects</p>
+                  <h2>Web projects</h2>
                 </div>
                 <div class="project-content"> 
                   <div class="project-card" data-format="1">
@@ -246,22 +247,84 @@
               </div>
             </section>
 
-            <section class="cta">
-              aaa
+            <section id="blog" class="blog-section">
+              <div class="section-container">
+                <div class="section-title">
+                  <h2>Blog</h2>
+                </div>
+                <div class="blog-content">
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./assets/astronaut.webp" alt="Sample Image">
+                    </div>
+                    <div class="blog-details">
+                      <div class="blog-title">
+                        <p>How to create a blog title</p>
+                      </div>
+                      <div class="blog-summary">
+                        Creating a blog title is fairly easy. It's as easy as trying to create a character in Sims 4. You just have to be creative.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./assets/astronaut.webp" alt="Sample Image">
+                    </div>
+                    <div class="blog-details">
+                      <div class="blog-title">
+                        <p>How to create a blog title</p>
+                      </div>
+                      <div class="blog-summary">
+                        Creating a blog title is fairly easy. It's as easy as trying to create a character in Sims 4. You just have to be creative.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-image">
+                      <img src="./assets/astronaut.webp" alt="Sample Image">
+                    </div>
+                    <div class="blog-details">
+                      <div class="blog-title">
+                        <p>How to create a blog title</p>
+                      </div>
+                      <div class="blog-summary">
+                        Creating a blog title is fairly easy. It's as easy as trying to create a character in Sims 4. You just have to be creative.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-more">
+                  <a href="#blog">See more</a>
+                </div>
+              </div>
             </section>
+
+            <section id="contact" class="cta-section">
+              <div class="section-container cta">
+                <div class="cta-header">
+                  <h2>I want to work with you!</h2>
+                </div>
+                <div class="cta-text">
+                  I'm looking for opportunities in web development, either frontend or backend or both. I'm more than willing to be mentored by the best people in the industry. And I'd more grateful if that would be you.
+                </div>
+                <div class="cta-button">
+                  <a href="mailto:dev.khagonia@gmail.com">Let's Collaborate</a>
+                </div>
+              </div>
+            </section>
+
+            <footer>
+              <div class="copyright">
+                <p>
+                  Copyright 2023 by Kaiser Hagonia. Icons, images have copyright from
+                  their respective owners.
+                </p>
+              </div>
+            </footer>
+
           </div>
         </div>
-      </div>
+      </div>    
     </main>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <div class="copyright">
-        <p>
-          Copyright 2023 by Kaiser Hagonia. Icons, images have copyright from
-          their respective owners.
-        </p>
-      </div>
-    </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@ class scrollingAnimation {
 
     const scrollingObserver = new IntersectionObserver(revealCallback, {
       root: null,
-      threshold: 0.5,
+      threshold: 0.3,
     });
 
     targetElement.classList.add(animation, "hidden");
@@ -152,14 +152,22 @@ const highlightCallback = (entries) => {
     link.classList.add('active');
   })
 
+  const socialIcons = document.querySelector('.social-icons');
+  socialIcons.classList.remove('active')
+  if(socialIcons.dataset.section === entry.target.id) {
+    socialIcons.classList.add('active');
+  }
+
 }
 
 const navObserver = new IntersectionObserver(highlightCallback, {
   root: null,
-  threshold: 0.8
+  threshold: 0.5
 })
 
 navObserver.observe(document.querySelector('.hero-section'));
 navObserver.observe(document.querySelector('.profile-section'));
 navObserver.observe(document.querySelector('.work-section'));
 navObserver.observe(document.querySelector('.projects-section'));
+navObserver.observe(document.querySelector('.blog-section'));
+navObserver.observe(document.querySelector('.cta-section'));
