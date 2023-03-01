@@ -18,7 +18,7 @@ class scrollingAnimation {
 
     const scrollingObserver = new IntersectionObserver(revealCallback, {
       root: null,
-      threshold: 0.3,
+      threshold: 0.4,
     });
 
     targetElement.classList.add(animation, "hidden");
@@ -27,9 +27,9 @@ class scrollingAnimation {
 }
 
 const scrollAnim = new scrollingAnimation();
-scrollAnim.animate('.profile-section', 'fade-in' , 400)
-scrollAnim.animate('.work-section', 'fade-in' , 400)
-scrollAnim.animate('.projects-section', 'fade-in' , 400)
+scrollAnim.animate('.profile-section', 'fade-in' , 200)
+scrollAnim.animate('.work-section', 'fade-in' , 200)
+scrollAnim.animate('.projects-section', 'fade-in' , 200)
 
 
 /****************************/
@@ -171,3 +171,5 @@ navObserver.observe(document.querySelector('.work-section'));
 navObserver.observe(document.querySelector('.projects-section'));
 navObserver.observe(document.querySelector('.blog-section'));
 navObserver.observe(document.querySelector('.cta-section'));
+
+console.log(navObserver.__proto__)
